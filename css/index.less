@@ -1,0 +1,681 @@
+//头部
+img[src=""],
+img:not([src]) {
+  opacity: 0;
+}
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+
+  .top {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+
+    .box {
+      width: 1200px;
+      height: 100px;
+      border-bottom: 1px solid #f3f3f3;
+    }
+  }
+
+  // 第一行左边
+  .top-left {
+    width: 660px;
+    float: left;
+    height: 100px;
+
+
+    h2 {
+      float: left;
+      height: 100px;
+      line-height: 100px;
+
+      img {
+        vertical-align: middle;
+        padding-right: 20px;
+      }
+    }
+
+    ul {
+      float: left;
+
+      li {
+        padding: 0 15px;
+        float: left;
+        font-size: 18px;
+        height: 100px;
+        line-height: 100px;
+
+        a {
+          color: #000;
+          font-size: 20px;
+
+          &:hover {
+            color: #31c27c;
+          }
+        }
+
+        em {
+          display: inline-block;
+          width: 38px;
+          height: 14px;
+          background-image: url(/images/mark_1.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          right: -5px;
+          top: 23px;
+        }
+
+      }
+
+
+    }
+
+
+    .icon {
+      position: relative;
+
+      .icon-item {
+        background-color: #fff;
+        box-shadow: 1px 1px 10px #888;
+        width: 140px;
+        height: 160px;
+        display: none;
+        position: absolute;
+        top: 80px;
+        line-height: 0;
+        border-radius: 5px;
+        transition: all 0.1s ease;
+
+        .icon-item-title {
+          font-size: 12px;
+          width: 140px;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 5px;
+        }
+
+        .icon-hq-fill,
+        .icon-DTS,
+        .icon-yifu {
+          color: #31c27c;
+          padding-right: 5px;
+        }
+
+        .icon-item-title-1 {
+          display: inline-block;
+          margin-left: 20px;
+          padding: 15px 20px;
+          border-radius: 30px;
+          font-size: 15px;
+          color: #FFF;
+          background-color: #31c27c;
+          margin-bottom: 5px;
+        }
+      }
+
+      &:hover .icon-item {
+        display: block;
+        transition: all 0.1s ease;
+      }
+    }
+
+    .current {
+      background-color: #31c27c;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  //第一行右边 搜索栏-
+  .top-right {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+
+    input {
+      height: 36px;
+      width: 174px;
+      border-radius: 5px #c9c9c9;
+      padding-left: 5px;
+    }
+
+    #suggest-list {
+      position: absolute;
+      top: 73px;
+      left: 0;
+      width: 174px;
+      background: #FFF;
+
+      li{
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+
+    .icon-sousuo {
+      position: absolute;
+      left: 873px;
+      color: #c9c9c9;
+      font-size: 18px;
+
+      :hover {
+        cursor: pointer;
+        color: #31c27c;
+      }
+    }
+
+    .top-login-link {
+      display: inline-block;
+      padding: 0 20px;
+
+      :hover {
+        cursor: pointer;
+        color: #31c27c;
+      }
+
+      a {
+        color: #000;
+        font-size: 18px;
+      }
+    }
+
+    .select-choose,
+    .select-box {
+      position: relative;
+      display: inline-block;
+      padding: 0 20px;
+      border: 1px solid #c9c9c9;
+      width: 75px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 5px;
+
+      &:hover .select-choose1 {
+        display: block;
+      }
+      &:hover {
+        background: #31c27c;
+      }
+      &:hover a{
+        color: #FFF;
+      }
+
+      a {
+        color: #000;
+
+        span {
+          display: block;
+          text-align: center;
+        }
+
+        em {
+          position: absolute;
+          top: 0px;
+          right: 10px;
+        }
+      }
+
+      .select-choose1 {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        width: 114px;
+        height: 70px;
+        text-align: center;
+        display: none;
+
+        span {
+          display: block;
+          width: 114px;
+          height: 35px;
+          line-height: 35px;
+          background: #FFF;
+          border: 1px solid #c9c9c9;
+
+          &:last-child {
+            border-top: 0;
+          }
+
+          &:hover {
+            background: #31c27c;
+            color: #FFF;
+          }
+        }
+      }
+    }
+
+
+    .select-choose {
+      background-color: #31c27c;
+
+      &:hover .select-choose1 {
+        display: block;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      .select-choose1 {
+        display: block;
+        position: absolute;
+        top: 36px;
+        left: 0;
+        display: none;
+        width: 114px;
+        border: 1px solid #afafaf;
+        background: #FFF;
+        text-align: center;
+
+        span {
+          font-size: 13px;
+          display: block;
+          height: 36px;
+          line-height: 36px;
+          border-bottom: 1px solid #afafaf;
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          &:hover {
+            color: #FFF;
+            background: #31c27c;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+//  第二行
+.top-buttom {
+  width: 1200px;
+  height: 50px;
+
+  ul {
+    display: flex;
+    width: 850px;
+    margin: auto;
+    justify-content: space-around;
+
+    li {
+      height: 50px;
+      line-height: 50px;
+
+      :hover {
+        cursor: pointer;
+        color: #31c27c;
+      }
+
+      a {
+        color: #000;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+//内容
+main {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+
+  .sing-connter {
+    display: none;
+  }
+
+  .current {
+    display: block;
+  }
+
+  .swiper-slide {
+    .imageBox {
+      display: block;
+      width: 224px;
+      height: 224px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    :hover em {
+      transform: scale(1.5);
+      transition: all 1s ease;
+      opacity: 1;
+    }
+
+    :hover img {
+      transform: scale(1.2);
+      transition: all 1s ease;
+    }
+
+    img {
+      width: 224px;
+      height: 224px;
+      transition: all 1s ease;
+    }
+
+    em {
+      position: absolute;
+      left: 87px;
+      top: 93.5px;
+      display: block;
+      transform-origin: 50% 50%;
+      width: 50px;
+      height: 50px;
+      background: url(/images/cover_play@2x.53a26efb.png) no-repeat;
+      background-size: contain;
+      opacity: 0;
+      transition: all 1s ease;
+    }
+  }
+
+
+  .one {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #f3f3f3ff;
+  }
+
+  .main-one,
+  .main-two,
+  .main-three,
+  .main-four,
+  .main-five {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+
+    .sing-list,
+    .sing-staring,
+    .recommend,
+    .new-disc-premiere,
+    .ranking-list {
+      text-align: center;
+
+      h2 {
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .sing-list-tab,
+    .sing-staring-tab,
+    .new-disc-premiere-tab {
+      width: 1200px;
+      height: 50px;
+      padding-bottom: 20px;
+
+      ul {
+        display: flex;
+        width: 600px;
+        margin: auto;
+        justify-content: space-around;
+
+        .current {
+          a {
+            color: #31c27c;
+          }
+        }
+
+        li {
+          height: 50px;
+          line-height: 50px;
+
+          :hover {
+            cursor: pointer;
+            color: #31c27c;
+          }
+
+
+
+          a {
+            color: #000;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .sing-connter {
+      width: 1200px;
+      height: 310px;
+      padding-bottom: 20px;
+
+      .sing-connter-item {
+        width: 224px;
+        height: 310px;
+
+        img {
+          width: 224px;
+          height: 224px;
+        }
+
+        a {
+          display: block;
+          padding-top: 10px;
+
+          p {
+            color: #000;
+            font-size: 14px;
+          }
+        }
+
+        p {
+          color: #afafaf;
+          ;
+        }
+
+        .swiper-pagination {
+          height: 20px;
+        }
+      }
+
+    }
+  }
+
+  .two {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    background-color: #fff;
+  }
+
+  .sing-staring-tab,
+  .new-disc-premiere-tab,
+  .ranking-list {
+    position: relative;
+
+    /* em {
+      position: absolute;
+      right: 1200px;
+    } */
+
+    button {
+      width: 124px;
+      height: 40px;
+      position: absolute;
+      left: 0;
+      border: 1px solid #f4f4f4;
+      background-color: #f2f2f2;
+    }
+  }
+
+  .debutlist {
+    width: 1200px;
+
+    .debutlist-item {
+      width: 100%;
+      height: 110px;
+      border-bottom: 1px solid #f2f2f2;
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 12px;
+
+      img {
+        width: 86px;
+        height: 86px;
+      }
+
+      .debutlist-item-box1 {
+        padding-left: 30px;
+
+        p {
+          padding: 5px;
+        }
+      }
+
+      .debutlist-item-time {
+        position: absolute;
+        right: 0;
+      }
+    }
+
+  }
+
+
+
+  .three {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    background-color: #f3f3f3ff;
+
+    .recommend-sing-item {
+      img {
+        width: 590px;
+        height: 236px;
+      }
+    }
+  }
+
+  .four {
+    width: 100%;
+    height: 850px;
+    margin: auto;
+    background-color: #fff;
+
+    .more {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .five {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #f3f3f3;
+
+    h2 {
+      display: inline-block;
+    }
+
+    span {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      font-size: 14px;
+
+      a {
+        color: #000;
+      }
+    }
+
+    .ranking-list-tab {
+      display: flex;
+      justify-content: space-between;
+
+      .ranking-list-item {
+        color: #fff;
+        width: 224px;
+        height: 567px;
+        background-image: url(../images/bg_index_top.5314c494.webp);
+        background-repeat: no-repeat;
+
+        h2,
+        p {
+          display: block;
+          text-align: center;
+          padding-top: 20px;
+        }
+
+        p {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 26px;
+        }
+
+        .toplist-songlist {
+          padding-left: 50px;
+          padding-top: 30px;
+          font-size: 14px;
+
+          .toplist-song {
+            padding: 20px 0;
+
+            .toplist-number {
+              display: inline-block;
+            }
+
+            .toplist-songname {
+              display: inline-block;
+              padding: 0 10px;
+            }
+
+            .toplist-artist {
+              padding-left: 22px;
+              padding-top: 10px;
+            }
+          }
+
+
+        }
+      }
+
+      .item2 {
+        background-image: url(../images/bg_index_top.5314c494.webp);
+        background-repeat: no-repeat;
+        background-position: -224px 0;
+      }
+
+      .item3 {
+        background-image: url(../images/bg_index_top.5314c494.webp);
+        background-repeat: no-repeat;
+        background-position: -448px 0;
+      }
+
+      .item4 {
+        background-image: url(../images/bg_index_top.5314c494.webp);
+        background-repeat: no-repeat;
+        background-position: -672px 0;
+      }
+
+      .item5 {
+        background-image: url(../images/bg_index_top.5314c494.webp);
+        background-repeat: no-repeat;
+        background-position: -896px 0;
+      }
+    }
+  }
+
+}

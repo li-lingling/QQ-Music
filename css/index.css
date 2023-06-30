@@ -1,0 +1,709 @@
+img[src=""],
+img:not([src]) {
+  opacity: 0;
+}
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+}
+header .top {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+header .top .box {
+  width: 1200px;
+  height: 100px;
+  border-bottom: 1px solid #f3f3f3;
+}
+header .top-left {
+  width: 660px;
+  float: left;
+  height: 100px;
+}
+header .top-left h2 {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+}
+header .top-left h2 img {
+  vertical-align: middle;
+  padding-right: 20px;
+}
+header .top-left ul {
+  float: left;
+}
+header .top-left ul li {
+  padding: 0 15px;
+  float: left;
+  font-size: 18px;
+  height: 100px;
+  line-height: 100px;
+}
+header .top-left ul li a {
+  color: #000;
+  font-size: 20px;
+}
+header .top-left ul li a:hover {
+  color: #31c27c;
+}
+header .top-left ul li em {
+  display: inline-block;
+  width: 38px;
+  height: 14px;
+  background-image: url(/images/mark_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: -5px;
+  top: 23px;
+}
+header .top-left .icon {
+  position: relative;
+}
+header .top-left .icon .icon-item {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #888;
+  width: 140px;
+  height: 160px;
+  display: none;
+  position: absolute;
+  top: 80px;
+  line-height: 0;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+header .top-left .icon .icon-item .icon-item-title {
+  font-size: 12px;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+}
+header .top-left .icon .icon-item .icon-hq-fill,
+header .top-left .icon .icon-item .icon-DTS,
+header .top-left .icon .icon-item .icon-yifu {
+  color: #31c27c;
+  padding-right: 5px;
+}
+header .top-left .icon .icon-item .icon-item-title-1 {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #FFF;
+  background-color: #31c27c;
+  margin-bottom: 5px;
+}
+header .top-left .icon:hover .icon-item {
+  display: block;
+  transition: all 0.1s ease;
+}
+header .top-left .current {
+  background-color: #31c27c;
+}
+header .top-left .current a {
+  color: #fff;
+}
+header .top-right {
+  float: right;
+  height: 100px;
+  line-height: 100px;
+  position: relative;
+}
+header .top-right input {
+  height: 36px;
+  width: 174px;
+  border-radius: 5px #c9c9c9;
+  padding-left: 5px;
+}
+header .top-right #suggest-list {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  width: 174px;
+  background: #FFF;
+}
+header .top-right #suggest-list li {
+  height: 20px;
+  line-height: 20px;
+}
+header .top-right .icon-sousuo {
+  position: absolute;
+  left: 873px;
+  color: #c9c9c9;
+  font-size: 18px;
+}
+header .top-right .icon-sousuo :hover {
+  cursor: pointer;
+  color: #31c27c;
+}
+header .top-right .top-login-link {
+  display: inline-block;
+  padding: 0 20px;
+}
+header .top-right .top-login-link :hover {
+  cursor: pointer;
+  color: #31c27c;
+}
+header .top-right .top-login-link a {
+  color: #000;
+  font-size: 18px;
+}
+header .top-right .select-choose,
+header .top-right .select-box {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  border: 1px solid #c9c9c9;
+  width: 75px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 5px;
+}
+header .top-right .select-choose:hover .select-choose1,
+header .top-right .select-box:hover .select-choose1 {
+  display: block;
+}
+header .top-right .select-choose:hover,
+header .top-right .select-box:hover {
+  background: #31c27c;
+}
+header .top-right .select-choose:hover a,
+header .top-right .select-box:hover a {
+  color: #FFF;
+}
+header .top-right .select-choose a,
+header .top-right .select-box a {
+  color: #000;
+}
+header .top-right .select-choose a span,
+header .top-right .select-box a span {
+  display: block;
+  text-align: center;
+}
+header .top-right .select-choose a em,
+header .top-right .select-box a em {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+header .top-right .select-choose .select-choose1,
+header .top-right .select-box .select-choose1 {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 114px;
+  height: 70px;
+  text-align: center;
+  display: none;
+}
+header .top-right .select-choose .select-choose1 span,
+header .top-right .select-box .select-choose1 span {
+  display: block;
+  width: 114px;
+  height: 35px;
+  line-height: 35px;
+  background: #FFF;
+  border: 1px solid #c9c9c9;
+}
+header .top-right .select-choose .select-choose1 span:last-child,
+header .top-right .select-box .select-choose1 span:last-child {
+  border-top: 0;
+}
+header .top-right .select-choose .select-choose1 span:hover,
+header .top-right .select-box .select-choose1 span:hover {
+  background: #31c27c;
+  color: #FFF;
+}
+header .top-right .select-choose {
+  background-color: #31c27c;
+}
+header .top-right .select-choose:hover .select-choose1 {
+  display: block;
+}
+header .top-right .select-choose a {
+  color: #fff;
+}
+header .top-right .select-choose .select-choose1 {
+  display: block;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  display: none;
+  width: 114px;
+  border: 1px solid #afafaf;
+  background: #FFF;
+  text-align: center;
+}
+header .top-right .select-choose .select-choose1 span {
+  font-size: 13px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #afafaf;
+}
+header .top-right .select-choose .select-choose1 span:last-child {
+  border-bottom: 0;
+}
+header .top-right .select-choose .select-choose1 span:hover {
+  color: #FFF;
+  background: #31c27c;
+}
+.top-buttom {
+  width: 1200px;
+  height: 50px;
+}
+.top-buttom ul {
+  display: flex;
+  width: 850px;
+  margin: auto;
+  justify-content: space-around;
+}
+.top-buttom ul li {
+  height: 50px;
+  line-height: 50px;
+}
+.top-buttom ul li :hover {
+  cursor: pointer;
+  color: #31c27c;
+}
+.top-buttom ul li a {
+  color: #000;
+  font-size: 15px;
+}
+main {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+main .sing-connter {
+  display: none;
+}
+main .current {
+  display: block;
+}
+main .swiper-slide .imageBox {
+  display: block;
+  width: 224px;
+  height: 224px;
+  position: relative;
+  overflow: hidden;
+}
+main .swiper-slide :hover em {
+  transform: scale(1.5);
+  transition: all 1s ease;
+  opacity: 1;
+}
+main .swiper-slide :hover img {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+main .swiper-slide img {
+  width: 224px;
+  height: 224px;
+  transition: all 1s ease;
+}
+main .swiper-slide em {
+  position: absolute;
+  left: 87px;
+  top: 93.5px;
+  display: block;
+  transform-origin: 50% 50%;
+  width: 50px;
+  height: 50px;
+  background: url(/images/cover_play@2x.53a26efb.png) no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transition: all 1s ease;
+}
+main .one {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #f3f3f3ff;
+}
+main .main-one,
+main .main-two,
+main .main-three,
+main .main-four,
+main .main-five {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+main .main-one .sing-list,
+main .main-two .sing-list,
+main .main-three .sing-list,
+main .main-four .sing-list,
+main .main-five .sing-list,
+main .main-one .sing-staring,
+main .main-two .sing-staring,
+main .main-three .sing-staring,
+main .main-four .sing-staring,
+main .main-five .sing-staring,
+main .main-one .recommend,
+main .main-two .recommend,
+main .main-three .recommend,
+main .main-four .recommend,
+main .main-five .recommend,
+main .main-one .new-disc-premiere,
+main .main-two .new-disc-premiere,
+main .main-three .new-disc-premiere,
+main .main-four .new-disc-premiere,
+main .main-five .new-disc-premiere,
+main .main-one .ranking-list,
+main .main-two .ranking-list,
+main .main-three .ranking-list,
+main .main-four .ranking-list,
+main .main-five .ranking-list {
+  text-align: center;
+}
+main .main-one .sing-list h2,
+main .main-two .sing-list h2,
+main .main-three .sing-list h2,
+main .main-four .sing-list h2,
+main .main-five .sing-list h2,
+main .main-one .sing-staring h2,
+main .main-two .sing-staring h2,
+main .main-three .sing-staring h2,
+main .main-four .sing-staring h2,
+main .main-five .sing-staring h2,
+main .main-one .recommend h2,
+main .main-two .recommend h2,
+main .main-three .recommend h2,
+main .main-four .recommend h2,
+main .main-five .recommend h2,
+main .main-one .new-disc-premiere h2,
+main .main-two .new-disc-premiere h2,
+main .main-three .new-disc-premiere h2,
+main .main-four .new-disc-premiere h2,
+main .main-five .new-disc-premiere h2,
+main .main-one .ranking-list h2,
+main .main-two .ranking-list h2,
+main .main-three .ranking-list h2,
+main .main-four .ranking-list h2,
+main .main-five .ranking-list h2 {
+  font-size: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+main .main-one .sing-list-tab,
+main .main-two .sing-list-tab,
+main .main-three .sing-list-tab,
+main .main-four .sing-list-tab,
+main .main-five .sing-list-tab,
+main .main-one .sing-staring-tab,
+main .main-two .sing-staring-tab,
+main .main-three .sing-staring-tab,
+main .main-four .sing-staring-tab,
+main .main-five .sing-staring-tab,
+main .main-one .new-disc-premiere-tab,
+main .main-two .new-disc-premiere-tab,
+main .main-three .new-disc-premiere-tab,
+main .main-four .new-disc-premiere-tab,
+main .main-five .new-disc-premiere-tab {
+  width: 1200px;
+  height: 50px;
+  padding-bottom: 20px;
+}
+main .main-one .sing-list-tab ul,
+main .main-two .sing-list-tab ul,
+main .main-three .sing-list-tab ul,
+main .main-four .sing-list-tab ul,
+main .main-five .sing-list-tab ul,
+main .main-one .sing-staring-tab ul,
+main .main-two .sing-staring-tab ul,
+main .main-three .sing-staring-tab ul,
+main .main-four .sing-staring-tab ul,
+main .main-five .sing-staring-tab ul,
+main .main-one .new-disc-premiere-tab ul,
+main .main-two .new-disc-premiere-tab ul,
+main .main-three .new-disc-premiere-tab ul,
+main .main-four .new-disc-premiere-tab ul,
+main .main-five .new-disc-premiere-tab ul {
+  display: flex;
+  width: 600px;
+  margin: auto;
+  justify-content: space-around;
+}
+main .main-one .sing-list-tab ul .current a,
+main .main-two .sing-list-tab ul .current a,
+main .main-three .sing-list-tab ul .current a,
+main .main-four .sing-list-tab ul .current a,
+main .main-five .sing-list-tab ul .current a,
+main .main-one .sing-staring-tab ul .current a,
+main .main-two .sing-staring-tab ul .current a,
+main .main-three .sing-staring-tab ul .current a,
+main .main-four .sing-staring-tab ul .current a,
+main .main-five .sing-staring-tab ul .current a,
+main .main-one .new-disc-premiere-tab ul .current a,
+main .main-two .new-disc-premiere-tab ul .current a,
+main .main-three .new-disc-premiere-tab ul .current a,
+main .main-four .new-disc-premiere-tab ul .current a,
+main .main-five .new-disc-premiere-tab ul .current a {
+  color: #31c27c;
+}
+main .main-one .sing-list-tab ul li,
+main .main-two .sing-list-tab ul li,
+main .main-three .sing-list-tab ul li,
+main .main-four .sing-list-tab ul li,
+main .main-five .sing-list-tab ul li,
+main .main-one .sing-staring-tab ul li,
+main .main-two .sing-staring-tab ul li,
+main .main-three .sing-staring-tab ul li,
+main .main-four .sing-staring-tab ul li,
+main .main-five .sing-staring-tab ul li,
+main .main-one .new-disc-premiere-tab ul li,
+main .main-two .new-disc-premiere-tab ul li,
+main .main-three .new-disc-premiere-tab ul li,
+main .main-four .new-disc-premiere-tab ul li,
+main .main-five .new-disc-premiere-tab ul li {
+  height: 50px;
+  line-height: 50px;
+}
+main .main-one .sing-list-tab ul li :hover,
+main .main-two .sing-list-tab ul li :hover,
+main .main-three .sing-list-tab ul li :hover,
+main .main-four .sing-list-tab ul li :hover,
+main .main-five .sing-list-tab ul li :hover,
+main .main-one .sing-staring-tab ul li :hover,
+main .main-two .sing-staring-tab ul li :hover,
+main .main-three .sing-staring-tab ul li :hover,
+main .main-four .sing-staring-tab ul li :hover,
+main .main-five .sing-staring-tab ul li :hover,
+main .main-one .new-disc-premiere-tab ul li :hover,
+main .main-two .new-disc-premiere-tab ul li :hover,
+main .main-three .new-disc-premiere-tab ul li :hover,
+main .main-four .new-disc-premiere-tab ul li :hover,
+main .main-five .new-disc-premiere-tab ul li :hover {
+  cursor: pointer;
+  color: #31c27c;
+}
+main .main-one .sing-list-tab ul li a,
+main .main-two .sing-list-tab ul li a,
+main .main-three .sing-list-tab ul li a,
+main .main-four .sing-list-tab ul li a,
+main .main-five .sing-list-tab ul li a,
+main .main-one .sing-staring-tab ul li a,
+main .main-two .sing-staring-tab ul li a,
+main .main-three .sing-staring-tab ul li a,
+main .main-four .sing-staring-tab ul li a,
+main .main-five .sing-staring-tab ul li a,
+main .main-one .new-disc-premiere-tab ul li a,
+main .main-two .new-disc-premiere-tab ul li a,
+main .main-three .new-disc-premiere-tab ul li a,
+main .main-four .new-disc-premiere-tab ul li a,
+main .main-five .new-disc-premiere-tab ul li a {
+  color: #000;
+  font-size: 14px;
+}
+main .main-one .sing-connter,
+main .main-two .sing-connter,
+main .main-three .sing-connter,
+main .main-four .sing-connter,
+main .main-five .sing-connter {
+  width: 1200px;
+  height: 310px;
+  padding-bottom: 20px;
+}
+main .main-one .sing-connter .sing-connter-item,
+main .main-two .sing-connter .sing-connter-item,
+main .main-three .sing-connter .sing-connter-item,
+main .main-four .sing-connter .sing-connter-item,
+main .main-five .sing-connter .sing-connter-item {
+  width: 224px;
+  height: 310px;
+}
+main .main-one .sing-connter .sing-connter-item img,
+main .main-two .sing-connter .sing-connter-item img,
+main .main-three .sing-connter .sing-connter-item img,
+main .main-four .sing-connter .sing-connter-item img,
+main .main-five .sing-connter .sing-connter-item img {
+  width: 224px;
+  height: 224px;
+}
+main .main-one .sing-connter .sing-connter-item a,
+main .main-two .sing-connter .sing-connter-item a,
+main .main-three .sing-connter .sing-connter-item a,
+main .main-four .sing-connter .sing-connter-item a,
+main .main-five .sing-connter .sing-connter-item a {
+  display: block;
+  padding-top: 10px;
+}
+main .main-one .sing-connter .sing-connter-item a p,
+main .main-two .sing-connter .sing-connter-item a p,
+main .main-three .sing-connter .sing-connter-item a p,
+main .main-four .sing-connter .sing-connter-item a p,
+main .main-five .sing-connter .sing-connter-item a p {
+  color: #000;
+  font-size: 14px;
+}
+main .main-one .sing-connter .sing-connter-item p,
+main .main-two .sing-connter .sing-connter-item p,
+main .main-three .sing-connter .sing-connter-item p,
+main .main-four .sing-connter .sing-connter-item p,
+main .main-five .sing-connter .sing-connter-item p {
+  color: #afafaf;
+}
+main .main-one .sing-connter .sing-connter-item .swiper-pagination,
+main .main-two .sing-connter .sing-connter-item .swiper-pagination,
+main .main-three .sing-connter .sing-connter-item .swiper-pagination,
+main .main-four .sing-connter .sing-connter-item .swiper-pagination,
+main .main-five .sing-connter .sing-connter-item .swiper-pagination {
+  height: 20px;
+}
+main .two {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  background-color: #fff;
+}
+main .sing-staring-tab,
+main .new-disc-premiere-tab,
+main .ranking-list {
+  position: relative;
+  /* em {
+      position: absolute;
+      right: 1200px;
+    } */
+}
+main .sing-staring-tab button,
+main .new-disc-premiere-tab button,
+main .ranking-list button {
+  width: 124px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  border: 1px solid #f4f4f4;
+  background-color: #f2f2f2;
+}
+main .debutlist {
+  width: 1200px;
+}
+main .debutlist .debutlist-item {
+  width: 100%;
+  height: 110px;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 12px;
+}
+main .debutlist .debutlist-item img {
+  width: 86px;
+  height: 86px;
+}
+main .debutlist .debutlist-item .debutlist-item-box1 {
+  padding-left: 30px;
+}
+main .debutlist .debutlist-item .debutlist-item-box1 p {
+  padding: 5px;
+}
+main .debutlist .debutlist-item .debutlist-item-time {
+  position: absolute;
+  right: 0;
+}
+main .three {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  background-color: #f3f3f3ff;
+}
+main .three .recommend-sing-item img {
+  width: 590px;
+  height: 236px;
+}
+main .four {
+  width: 100%;
+  height: 850px;
+  margin: auto;
+  background-color: #fff;
+}
+main .four .more {
+  position: absolute;
+  right: 0;
+}
+main .five {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #f3f3f3;
+}
+main .five h2 {
+  display: inline-block;
+}
+main .five span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 14px;
+}
+main .five span a {
+  color: #000;
+}
+main .five .ranking-list-tab {
+  display: flex;
+  justify-content: space-between;
+}
+main .five .ranking-list-tab .ranking-list-item {
+  color: #fff;
+  width: 224px;
+  height: 567px;
+  background-image: url(../images/bg_index_top.5314c494.webp);
+  background-repeat: no-repeat;
+}
+main .five .ranking-list-tab .ranking-list-item h2,
+main .five .ranking-list-tab .ranking-list-item p {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+main .five .ranking-list-tab .ranking-list-item p {
+  font-size: 24px;
+}
+main .five .ranking-list-tab .ranking-list-item h2 {
+  font-size: 26px;
+}
+main .five .ranking-list-tab .ranking-list-item .toplist-songlist {
+  padding-left: 50px;
+  padding-top: 30px;
+  font-size: 14px;
+}
+main .five .ranking-list-tab .ranking-list-item .toplist-songlist .toplist-song {
+  padding: 20px 0;
+}
+main .five .ranking-list-tab .ranking-list-item .toplist-songlist .toplist-song .toplist-number {
+  display: inline-block;
+}
+main .five .ranking-list-tab .ranking-list-item .toplist-songlist .toplist-song .toplist-songname {
+  display: inline-block;
+  padding: 0 10px;
+}
+main .five .ranking-list-tab .ranking-list-item .toplist-songlist .toplist-song .toplist-artist {
+  padding-left: 22px;
+  padding-top: 10px;
+}
+main .five .ranking-list-tab .item2 {
+  background-image: url(../images/bg_index_top.5314c494.webp);
+  background-repeat: no-repeat;
+  background-position: -224px 0;
+}
+main .five .ranking-list-tab .item3 {
+  background-image: url(../images/bg_index_top.5314c494.webp);
+  background-repeat: no-repeat;
+  background-position: -448px 0;
+}
+main .five .ranking-list-tab .item4 {
+  background-image: url(../images/bg_index_top.5314c494.webp);
+  background-repeat: no-repeat;
+  background-position: -672px 0;
+}
+main .five .ranking-list-tab .item5 {
+  background-image: url(../images/bg_index_top.5314c494.webp);
+  background-repeat: no-repeat;
+  background-position: -896px 0;
+}
